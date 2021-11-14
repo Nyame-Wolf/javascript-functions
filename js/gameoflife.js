@@ -60,9 +60,9 @@ const printCells = (state) => {
   } = corners(state);
 
   const a = [];
-  for (y = y1; y <= y2; y++) {
+  for (let y = y2; y >= y1; y--) {
     const b = [];
-    for (x = x1; x <= x2; x++) {
+    for (let x = x1; x <= x2; x++) {
       b.push(printCell([x, y], state));
     }
 
